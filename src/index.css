@@ -307,10 +307,9 @@ Hero
   min-height: calc(100vh - 5rem);
   display: grid;
   place-items: center;
-  background: rebeccapurple;
 }
 .hero-center {
-  margin: 0 auto;
+  margin: 15rem auto;
   color: var(--white);
   width: var(--fluid-width);
   max-width: var(--max-width);
@@ -468,9 +467,9 @@ Submenu
     perspective: 1000px;
     border-radius: var(--borderRadius);
     visibility: hidden;
-    opacity: 0;
+    /* opacity: 0; */
     transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
-    z-index: -1;
+    /* z-index: -1; */
   }
   .show-submenu {
     visibility: visible;
