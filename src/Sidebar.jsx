@@ -22,7 +22,7 @@ const Sidebar = () => {
                     return (
                       <a key={id} href={url}>
                         {icon}
-                        {label}{" "}
+                        {label}
                       </a>
                     )
                   })}

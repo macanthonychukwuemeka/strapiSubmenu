@@ -10,12 +10,13 @@ const Submenu = () => {
 
   const handleMouseLeave = (event) => {
     const submenu = submenuContainer.current
-    const result = submenu.getBoundingClientRect()
-    console.log(result)
-    // const { clientX, clientY, bottom } = event
-    // console.log(clientX, clientY, bottom)
-    // setPageId(null)
-    // evertime the mouse leaves the page id, the submenu leaves
+    const { left, right, bottom } = submenu.getBoundingClientRect()
+    const { clientX, clientY } = event
+
+    if (clientX < left - 1 || clientX > right - 1 || clientY > bottom - 1) {
+      setPageId(null)
+      // evertime the mouse leaves the page id, the submenu leaves
+    }
   }
   return (
     <div
