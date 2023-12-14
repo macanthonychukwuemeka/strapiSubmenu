@@ -4,6 +4,7 @@ import { useRef } from "react"
 
 const Submenu = () => {
   const { pageId, setPageId } = useGlobalContext()
+
   const currentPage = sublinks.find((item) => item.pageId === pageId)
 
   const submenuContainer = useRef(null)

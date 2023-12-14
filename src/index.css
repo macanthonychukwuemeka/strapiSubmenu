@@ -477,6 +477,7 @@ Submenu
     transform: rotateX(0deg) translateX(-50%);
     z-index: 10;
   }
+
   .submenu h5 {
     margin-bottom: 1rem;
     color: var(--primary-700);
